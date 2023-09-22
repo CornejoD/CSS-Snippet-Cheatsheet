@@ -1,0 +1,16 @@
+:root
+{
+    --wordColor: #b442b8;
+
+}
+
+*body
+{
+    font-size: 18px;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: blue;
+}
+
