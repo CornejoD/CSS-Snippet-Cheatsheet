@@ -1,16 +1,89 @@
 :root
 {
-    --wordColor: #b442b8;
+    --wordColor: #ca23dc;
+    --light: #ffffff;
+    --background: #4a494e;
 
 }
 
-*body
+body
 {
     font-size: 18px;
+    color: var(--wordColor);
     display: flex;
     flex-direction:column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: blue;
+    background-color: var(--background);
 }
 
+h1
+{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--wordColor);
+}
+
+header
+{
+    padding: 20px;
+    text-align: center;
+    color: var(--light);
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer
+{
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    color: var(--wordColor);
+    margin-top: auto;
+}
+
+.boxes
+{
+    flex: 2;
+    padding: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card 
+{
+    border-style:dashed;
+    border-color: var(--light);
+    border-width: 2px;
+    padding: 20px;
+    flex: 0 0 300px;
+    margin: 20px;
+}
+
+.code
+{
+  border-style: hidden;
+  border-width: 1px;
+  border-radius: 7px;
+  padding: 10px;
+  color: var(--light);
+  background-image: linear-gradient(#aa49b6,var(--wordColor));
+}
+
+.card > header 
+{
+    border-style: solid;
+    background-color: var(--background);
+    color: var(--wordColor);
+    border-color: var(--light);
+    margin-top: -55px;
+    text-align: start;
+    font-size:x-large;
+    position: relative;
+}
